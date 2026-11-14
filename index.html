@@ -86,8 +86,9 @@ nav .btn{padding:10px 20px;font-size:.9rem}
 .t4{background:conic-gradient(from 90deg at 50% 50%,var(--deep),var(--el),var(--y),var(--el),var(--deep))}
 dialog{border:1px solid var(--line);border-radius:24px;background:var(--deep);color:var(--w);width:min(900px,92vw);padding:20px}
 dialog::backdrop{background:rgba(10,4,24,.85)}
-.player{aspect-ratio:16/9;border-radius:16px;background:var(--p);display:grid;place-items:center;text-align:center;overflow:hidden}
-.player video{width:100%;height:100%;object-fit:contain;background:#000}.close{float:right;margin-bottom:12px}
+.thumb{overflow:hidden}
+.work .pvbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(22px) brightness(.55);transform:scale(1.3)}
+.work .pv{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 /* process */
 .steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px;position:relative}
 .steps::before{content:"";position:absolute;top:26px;left:5%;right:5%;height:2px;background:linear-gradient(90deg,var(--y),var(--el));transform-origin:left;transform:scaleX(0);transition:transform 1.4s ease}
